@@ -91,3 +91,23 @@ as<Tooltip tip="test">df</Tooltip>asdf
 <Card title="New Card" icon="sparkles" horizontal href="https://printy6.com" img="https://mintlify-assets.b-cdn.net/yellowstone.jpeg">
   fasdfsadf
 </Card>
+
+```typescript Line test.tsx {2,6-7}
+// highlight a line
+<div>Hello World</div>  // [\!code highlight]
+// highlight a word
+<div>Fumadocs</div>     // [\!code word:Fumadocs]
+// diff styles
+console.log('hewwo');   // [\!code --]
+console.log('hello');   // [\!code ++]
+// focus
+return new ResizeObserver(() => {}) // [\!code focus]
+```
+
+```javascript Line Highlighting Example {1,3-5}
+const greeting = "Hello, World!";
+function sayHello() {
+  console.log(greeting);
+}
+sayHello();
+```
